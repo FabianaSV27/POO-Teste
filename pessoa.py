@@ -23,8 +23,7 @@ class criar_vendedor:
         self.vendedor.append(novo_vendedor)
         if (nome >= 4):
             print(f"vendedor {name} adicionado em database.")
-        else:
-            print(f"vendedor {name} invalido")
+            return vendedor
 
 
     
