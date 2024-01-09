@@ -18,6 +18,7 @@ class Bicho(Animal):
         self.especie = especie
         self.som_bicho = som
 
+    #redefinir nome diferente do atributo da classe pra evita conflitos
     def fazer_som(self):
          print(f"O {self.nome} está fazendo {self.som_bicho}")
 
