@@ -1,30 +1,31 @@
-class Pessoa:
+class Animal:   
 
-    def __init__ (self,nome,cpf,id):
-        self.nome = nome
-        self.cpf = cpf
-        self.id = id
+    def __init__(self, nome, idade):
 
-class vendedor:
+        self.nome = nome 
+        self.idade = idade
 
-    def __init__ (Pessoa, nome, salario, vendedor_id):
-        # inicializa os atributos comuns da classe pessoa
-        super().__init__(vendedor_id, nome)
-        self.cpf = cpf
+    def barulho(self):
+        print(f"O {self.nome} esta fazendo barulho")
 
-class VendedorDataBase:
-    def __init__(self):
-        self.vendedor = []
+class Bicho(Animal):
 
+    def __init__(self, nome, idade, especie, som):
 
-class criar_vendedor:
-    def __init__(vendedor_id, nome, cpf):
-        novo.vendedor = vendedor(vendedor_id, nome, cpf)
-        self.vendedor.append(novo_vendedor)
-        if (nome >= 4):
-            print(f"vendedor {name} adicionado em database.")
-            return vendedor
+        #posso colocar super(). para os atributos iguas de outra classe
+        super().__init__(nome, idade)
+
+        self.especie = especie
+        self.som_bicho = som
+
+    def fazer_som(self):
+         print(f"O {self.nome} está fazendo {self.som_bicho}")
 
 
-    
-    
+meu_animal = Bicho("patonildo", 3, "ganso", "quack")
+
+print(meu_animal.nome)
+print(meu_animal.idade)
+print(meu_animal.especie)
+meu_animal.barulho()
+meu_animal.fazer_som()
